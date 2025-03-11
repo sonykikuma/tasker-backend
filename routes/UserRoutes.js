@@ -2,7 +2,9 @@ require("dotenv").config();
 const UserRouter = require("express").Router();
 
 const { ensureAuthentication } = require("../utils/ValidUserAuthentication");
-const bcrypt = require("bcrypt");
+//const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
+
 const { userModel } = require("../models/userModel");
 const jwt = require("jsonwebtoken");
 
